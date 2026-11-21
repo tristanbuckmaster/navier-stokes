@@ -31,6 +31,12 @@ lake build
 The library is large (about 2,270 files and 600,000 lines), and a full build needs a great deal of memory and
 time.
 
+To print the axioms on which each theorem depends, after the build, from `lean/`:
+
+```bash
+lake env lean scripts/PrintAxioms.lean
+```
+
 ## What is and is not here
 
 The formalization contains no data. The certificate whose hash the paper gives is not in this repository; the
